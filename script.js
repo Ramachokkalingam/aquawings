@@ -18,20 +18,26 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Smooth scrolling for navigation links
-    navLinks.forEach(link => {
+    // Smooth scrolling for navigation links and logo
+    const allNavLinks = document.querySelectorAll('.nav-link, .logo-link, .footer-logo-link');
+    allNavLinks.forEach(link => {
         link.addEventListener('click', function(e) {
-            e.preventDefault();
             const targetId = this.getAttribute('href');
-            const targetSection = document.querySelector(targetId);
             
-            if (targetSection) {
-                const offsetTop = targetSection.offsetTop - 80; // Account for fixed navbar
-                window.scrollTo({
-                    top: offsetTop,
-                    behavior: 'smooth'
-                });
+            // Only prevent default for anchor links (starting with #)
+            if (targetId && targetId.startsWith('#')) {
+                e.preventDefault();
+                const targetSection = document.querySelector(targetId);
+                
+                if (targetSection) {
+                    const offsetTop = targetSection.offsetTop - 80; // Account for fixed navbar
+                    window.scrollTo({
+                        top: offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
             }
+            // For external links like careers.html, let the browser handle navigation normally
         });
     });
 
@@ -91,69 +97,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// Contact form functionality
-document.addEventListener('DOMContentLoaded', function() {
-    const contactForm = document.getElementById('contactForm');
-    
-    if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Get form data
-            const formData = new FormData(this);
-            const formObject = {};
-            formData.forEach((value, key) => {
-                formObject[key] = value;
-            });
-
-            // Show loading state
-            const submitButton = this.querySelector('button[type="submit"]');
-            const originalText = submitButton.textContent;
-            submitButton.textContent = 'Sending...';
-            submitButton.disabled = true;
-
-            // Simulate form submission (replace with actual form handling)
-            setTimeout(() => {
-                alert('Thank you for your message! We will get back to you soon.');
-                this.reset();
-                submitButton.textContent = originalText;
-                submitButton.disabled = false;
-            }, 2000);
-
-            // In a real implementation, you would send the data to your server
-            console.log('Form submitted:', formObject);
-        });
-    }
-});
-
-// Newsletter form functionality
-document.addEventListener('DOMContentLoaded', function() {
-    const newsletterForm = document.querySelector('.newsletter-form');
-    
-    if (newsletterForm) {
-        newsletterForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            const email = this.querySelector('input[type="email"]').value;
-            const submitButton = this.querySelector('button[type="submit"]');
-            const originalText = submitButton.textContent;
-            
-            // Show loading state
-            submitButton.textContent = 'Subscribing...';
-            submitButton.disabled = true;
-
-            // Simulate subscription (replace with actual implementation)
-            setTimeout(() => {
-                alert('Thank you for subscribing to our newsletter!');
-                this.reset();
-                submitButton.textContent = originalText;
-                submitButton.disabled = false;
-            }, 1500);
-
-            console.log('Newsletter subscription:', email);
-        });
-    }
-});
+// Contact functionality removed - now using direct email links
 
 // Scroll animations
 document.addEventListener('DOMContentLoaded', function() {

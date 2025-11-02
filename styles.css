@@ -99,6 +99,19 @@ body {
     gap: 10px;
 }
 
+.logo-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.2s ease;
+}
+
+.logo-link:hover {
+    transform: scale(1.05);
+}
+
 .logo {
     height: 40px;
     width: auto;
@@ -981,6 +994,19 @@ body {
     align-items: center;
     gap: 10px;
     margin-bottom: 1rem;
+}
+
+.footer-logo-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.2s ease;
+}
+
+.footer-logo-link:hover {
+    transform: scale(1.05);
 }
 
 .footer-logo img {

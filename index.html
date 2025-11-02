@@ -22,8 +22,10 @@
     <meta property="twitter:image" content="assets/og-image.jpg">
     
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="assets/logo.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/logo.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/logo.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/logo.png">
     
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -34,8 +36,10 @@
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <img src="assets/logo.png" alt="Aqua Wings" class="logo">
-                <span class="logo-text">Aqua Wings</span>
+                <a href="#home" class="logo-link">
+                    <img src="assets/logo.png" alt="Aqua Wings" class="logo">
+                    <span class="logo-text">Aqua Wings</span>
+                </a>
             </div>
             <ul class="nav-menu">
                 <li><a href="#home" class="nav-link">Home</a></li>
@@ -418,7 +422,9 @@
         </div>
     </section>
 
-    <!-- News & Media Section -->    <section class="news-media">
+    <!-- News & Media Section - TEMPORARILY COMMENTED OUT -->
+    <!--
+    <section class="news-media">
         <div class="container">
             <h2 class="section-title">News & Media</h2>
             <div class="news-grid">
@@ -458,6 +464,7 @@
             </div>
         </div>
     </section>
+    -->
 
     <!-- FAQ Section -->
     <section class="faq">
@@ -528,68 +535,49 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact">
+    <!-- <section id="contact" class="contact">
         <div class="container">
             <h2 class="section-title">Contact Us</h2>
             <div class="contact-content">
-                <div class="contact-form">
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="subject">Subject</label>
-                            <input type="text" id="subject" name="subject" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
-                    </form>
-                </div>
                 <div class="contact-info">
                     <div class="contact-item">
                         <i class="fas fa-envelope"></i>
                         <div>
                             <h4>Email</h4>
-                            <p><a href="mailto:ramachokkalingam03@gmail.com">ramachokkalingam03@gmail.com</a></p>
+                            <p><a href="mailto:contact@aquawings.com">contact@aquawings.com</a></p>
                         </div>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-phone"></i>
                         <div>
                             <h4>Phone</h4>
-                            <p>+91 950 027 4982 </p>
+                            <p>+91 950 027 4982</p>
                         </div>
                     </div>
                     <div class="social-media">
                         <h4>Follow Us</h4>
                         <div class="social-links">
                             <a href="https://www.linkedin.com/company/105584038/" class="social-link"><i class="fab fa-linkedin"></i></a>
-                            <!-- <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
                             <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
-                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a> -->
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer section id="contact" class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
                     <div class="footer-logo">
-                        <img src="assets/logo.png" alt="Aqua Wings">
-                        <span>Aqua Wings</span>
+                        <a href="#home" class="footer-logo-link">
+                            <img src="assets/logo.png" alt="Aqua Wings">
+                            <span>Aqua Wings</span>
+                        </a>
                     </div>
                     <p>Revolutionizing water rescue with AI-powered autonomous drones.</p>
                 </div>
@@ -612,12 +600,17 @@
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h4>Newsletter</h4>
-                    <p>Subscribe for updates on our progress</p>
-                    <form class="newsletter-form">
-                        <input type="email" placeholder="Enter your email">
-                        <button type="submit" class="btn btn-primary">Subscribe</button>
-                    </form>
+                    <h4>Contact</h4>
+                    <div class="footer-contact">
+                        <p><strong>Email</strong></p>
+                        <p><a href="mailto:contact@aquawings.com">contact@aquawings.com</a></p>
+                        <p><strong>Phone</strong></p>
+                        <p>+91 950 027 4982</p>
+                        <p><strong>Follow Us</strong></p>
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/company/105584038/" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="footer-bottom">
