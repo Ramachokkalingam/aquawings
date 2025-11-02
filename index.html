@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>Aqua Wings - AI-Powered Water Rescue Drones</title>
+    <meta name="description" content="Aqua Wings is an autonomous drone system designed to detect drowning individuals and deliver immediate life-saving support using AI technology.">
+    <meta name="keywords" content="water rescue, AI drones, drowning detection, autonomous rescue, emergency response, water safety">
+    <meta name="author" content="Aqua Wings Team">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://aquawings.tech/">
+    <meta property="og:title" content="Aqua Wings - AI-Powered Water Rescue Drones">
+    <meta property="og:description" content="Revolutionary autonomous drone system for detecting drowning and delivering life-saving support">
+    <meta property="og:image" content="assets/og-image.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://aquawings.tech/">
+    <meta property="twitter:title" content="Aqua Wings - AI-Powered Water Rescue Drones">
+    <meta property="twitter:description" content="Revolutionary autonomous drone system for detecting drowning and delivering life-saving support">
+    <meta property="twitter:image" content="assets/og-image.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="assets/logo.png" alt="Aqua Wings" class="logo">
+                <span class="logo-text">Aqua Wings</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
+                <li><a href="#use-cases" class="nav-link">Use Cases</a></li>
+                <li><a href="#tech" class="nav-link">Technology</a></li>
+                <li><a href="#team" class="nav-link">Team</a></li>
+                <li><a href="careers.html" class="nav-link">Careers</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <video autoplay muted loop class="hero-video">
+                <source src="assets/hero-video.mp4" type="video/mp4">
+            </video>
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">Revolutionizing Water Rescue with AI-Powered Drones</h1>
+            <p class="hero-subtitle">Aqua Wings is an autonomous drone system designed to detect drowning individuals and deliver immediate life-saving support.</p>
+            <div class="hero-buttons">
+                <a href="#how-it-works" class="btn btn-primary">See How It Works</a>
+                <a href="#contact" class="btn btn-secondary">Contact Us</a>
+                <a href="#demo" class="btn btn-primary">Watch Demo</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Problem Brief Section -->
+    <section class="problem-brief">
+        <div class="container">
+            <h2 class="section-title">The Silent Emergency</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">236,000+</div>
+                    <div class="stat-text">Drowning deaths every year (WHO)</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">Critical</div>
+                    <div class="stat-text">Delays in rescue = lower survival rates</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">Limited</div>
+                    <div class="stat-text">Lifeguard shortage and limited visibility</div>
+                </div>
+            </div>
+            <div class="emotional-hook">
+                <h3>"What if technology could be the lifeguard?"</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Cards Section -->
+    <section class="solution-cards">
+        <div class="container">
+            <h2 class="section-title">How Aqua Wings Saves Lives</h2>
+            <div class="cards-grid">
+                <div class="solution-card">
+                    <div class="card-icon">🎯</div>
+                    <h3>Real-Time Detection</h3>
+                    <p>Detects drowning in real-time using advanced AI vision technology</p>
+                </div>
+                <div class="solution-card">
+                    <div class="card-icon">🚁</div>
+                    <h3>Autonomous Navigation</h3>
+                    <p>Navigates autonomously to the victim using GPS and SLAM technology</p>
+                </div>
+                <div class="solution-card">
+                    <div class="card-icon">🛟</div>
+                    <h3>Rescue Deployment</h3>
+                    <p>Deploys a floating rescue device with precision targeting</p>
+                </div>
+                <div class="solution-card">
+                    <div class="card-icon">🔋</div>
+                    <h3>Smart Return</h3>
+                    <p>Returns to base or hovers awaiting further instruction</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">About Aqua Wings</h2>
+                    <div class="about-subsection">
+                        <h3>Our Story</h3>
+                        <p>Born from a mission to save lives using technology. Aqua Wings emerged from the recognition that traditional water rescue methods often fall short when every second counts. Our innovative approach combines cutting-edge AI, autonomous navigation, and rapid deployment systems to create a solution that acts before it's too late.</p>
+                    </div>
+                    <div class="about-subsection">
+                        <h3>Our Mission</h3>
+                        <p>To empower every waterbody—whether natural or man-made—with intelligent rescue technology that acts before it's too late.</p>
+                    </div>
+                    <div class="about-subsection">
+                        <h3>Our Vision</h3>
+                        <p>A world where no one drowns unnoticed. We envision AI drones stationed across beaches, ships, and lakes—ready to respond in seconds.</p>
+                    </div>
+                </div>
+                <div class="timeline">
+                    <h3>Development Timeline</h3>
+                    <div class="timeline-items">
+                        <div class="timeline-item">
+                            <div class="timeline-icon">💡</div>
+                            <div class="timeline-content">
+                                <h4>Idea</h4>
+                                <p>Conceptualized AI-powered water rescue system</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-icon">✅</div>
+                            <div class="timeline-content">
+                                <h4>Prototype</h4>
+                                <p>Built first working prototype with basic AI detection</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-icon">🔬</div>
+                            <div class="timeline-content">
+                                <h4>Test Phase</h4>
+                                <p>Extensive testing and AI model refinement</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-icon">🚁</div>
+                            <div class="timeline-content">
+                                <h4>Field Trials</h4>
+                                <p>Real-world testing in controlled environments</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-icon">🚀</div>
+                            <div class="timeline-content">
+                                <h4>Launch Plan</h4>
+                                <p>Preparing for commercial deployment</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <h2 class="section-title">How It Works</h2>
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Detection</h3>
+                        <ul>
+                            <li>Real-time video feed analyzed using a trained AI model</li>
+                            <li>Identifies panic gestures, abnormal water motion, or yelling</li>
+                            <li>Infrared camera for night detection</li>
+                        </ul>
+                        <div class="step-visual">
+                            <i class="fas fa-eye fa-3x"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Navigation</h3>
+                        <ul>
+                            <li>Flight controller (Pixhawk) + GPS + SLAM</li>
+                            <li>Avoids obstacles autonomously</li>
+                            <li>Flight path calculated and adjusted on the fly</li>
+                        </ul>
+                        <div class="step-visual">
+                            <i class="fas fa-route fa-3x"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Rescue Deployment</h3>
+                        <ul>
+                            <li>Drone positions itself above victim</li>
+                            <li>Lifebuoy or inflatable raft is released precisely</li>
+                            <li>Optional: Shouts rescue instructions using speaker</li>
+                        </ul>
+                        <div class="step-visual">
+                            <i class="fas fa-life-ring fa-3x"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Post-Rescue</h3>
+                        <ul>
+                            <li>Drone returns to base or hovers nearby</li>
+                            <li>Sends rescue confirmation to command center</li>
+                            <li>Optional: Sends live footage to emergency services</li>
+                        </ul>
+                        <div class="step-visual">
+                            <i class="fas fa-check-circle fa-3x"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Use Cases Section -->
+    <section id="use-cases" class="use-cases">
+        <div class="container">
+            <h2 class="section-title">Real-World Applications</h2>
+            <div class="use-cases-grid">
+                <div class="use-case-card">
+                    <div class="use-case-icon">🏖️</div>
+                    <h3>Beaches</h3>
+                    <p>Drones patrol coasts and react faster than lifeguards, providing 24/7 surveillance of popular beach areas.</p>
+                </div>
+                <div class="use-case-card">
+                    <div class="use-case-icon">🚢</div>
+                    <h3>Ships & Cruises</h3>
+                    <p>Night rescues on open sea are extremely difficult—Aqua Wings fills the gap with instant response capabilities.</p>
+                </div>
+                <div class="use-case-card">
+                    <div class="use-case-icon">⚓</div>
+                    <h3>Naval / Military Training</h3>
+                    <p>Saves cadets in underwater training mishaps with rapid deployment and precision targeting.</p>
+                </div>
+                <div class="use-case-card">
+                    <div class="use-case-icon">🌊</div>
+                    <h3>Flood Rescue</h3>
+                    <p>Reaches victims trapped in waterlogged areas unreachable by boat or traditional rescue methods.</p>
+                </div>
+                <div class="use-case-card">
+                    <div class="use-case-icon">🏞️</div>
+                    <h3>Lakes, Dams & Water Parks</h3>
+                    <p>Fast response during public emergencies in recreational water facilities and natural bodies of water.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech & Innovation Section -->
+    <section id="tech" class="tech-innovation">
+        <div class="container">
+            <h2 class="section-title">Technology & Innovation</h2>
+            <div class="tech-tabs">
+                <div class="tab-buttons">
+                    <button class="tab-btn active" data-tab="hardware">Hardware</button>
+                    <button class="tab-btn" data-tab="software">Software</button>
+                    <button class="tab-btn" data-tab="ethics">Ethics & Privacy</button>
+                </div>
+                <div class="tab-content">
+                    <div id="hardware" class="tab-pane active">
+                        <div class="tech-grid">
+                            <div class="tech-item">
+                                <h4>Drone Frame</h4>
+                                <p>Waterproof, lightweight carbon fiber construction</p>
+                            </div>
+                            <div class="tech-item">
+                                <h4>Controller</h4>
+                                <p>Pixhawk flight controller for precise navigation</p>
+                            </div>
+                            <div class="tech-item">
+                                <h4>Processor</h4>
+                                <p>Raspberry Pi or Jetson Nano for AI processing</p>
+                            </div>
+                            <div class="tech-item">
+                                <h4>Camera</h4>
+                                <p>HD + IR support for day and night operations</p>
+                            </div>
+                            <div class="tech-item">
+                                <h4>Deployment System</h4>
+                                <p>Servo/motor-controlled payload release mechanism</p>
+                            </div>
+                            <div class="tech-item">
+                                <h4>Battery</h4>
+                                <p>LiPo battery system with ~30 minutes runtime</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="software" class="tab-pane">
+                        <div class="tech-grid">
+                            <div class="tech-item">
+                                <h4>AI Model</h4>
+                                <p>Trained on drowning gestures and body language patterns</p>
+                            </div>
+                            <div class="tech-item">
+                                <h4>Navigation</h4>
+                                <p>GPS + SLAM + PID control for autonomous flight</p>
+                            </div>
+                            <div class="tech-item">
+                                <h4>Communication</h4>
+                                <p>2.4GHz/5GHz RF, 4G LTE fallback connectivity</p>
+                            </div>
+                            <div class="tech-item">
+                                <h4>Failsafe</h4>
+                                <p>Obstacle avoidance, auto-return safety features</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="ethics" class="tab-pane">
+                        <div class="ethics-content">
+                            <div class="ethics-item">
+                                <h4>Data Storage</h4>
+                                <p>Footage is processed locally and only essential data is transmitted. No permanent storage of personal imagery.</p>
+                            </div>
+                            <div class="ethics-item">
+                                <h4>Anonymized Training</h4>
+                                <p>All training data is anonymized and used solely for improving rescue detection accuracy.</p>
+                            </div>
+                            <div class="ethics-item">
+                                <h4>No Surveillance Misuse</h4>
+                                <p>System is designed exclusively for emergency rescue operations and cannot be used for surveillance purposes.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team">
+        <div class="container">
+            <h2 class="section-title">Our Team</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-photo">
+                        <img src="assets/team/ramachokkalingam.jpg" alt="Ramachokkalingam S A">
+                    </div>
+                    <h3>Ramachokkalingam S A</h3>
+                    <p class="member-role">Project Lead & AI Systems Engineer</p>
+                    <p class="member-bio"> Ramachokkalingam S A leads the Aqua Wings project, specializing in AI, computer vision, and autonomous drone systems.</p>
+                    <div class="member-links">
+                        <a href="https://www.linkedin.com/in/ramachokkalingam/" class="social-link" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/Ramachokkalingam" class="social-link"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                 <div class="team-member">
+                    <div class="member-photo">
+                        <img src="assets/team/hammad.jpg" alt="Hammad Safi">
+                    </div>
+                    <h3>Hammad Safi</h3>
+                    <p class="member-role">Hardware & Embedded Systems Specialist</p>
+                    <p class="member-bio">Integrates drone hardware, lifebuoy deployment mechanisms, and embedded systems for real-time rescue operations.</p>
+                    <div class="member-links">
+                        <a href="https://www.linkedin.com/in/hammad-safi/" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <!-- <a href="#" class="social-link"><i class="fab fa-dribbble"></i></a> -->
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="member-photo">
+                        <img src="assets/team/anshika.jpg" alt="Anshika Singh">
+                    </div>                    
+                    <h3>Anshika Singh</h3>
+                    <p class="member-role">Operations and Outreach Strategy Manager</p>
+                    <p class="member-bio">Manages field testing, coordination with emergency services, and public awareness campaigns for water safety using Aqua Wings.</p>
+                    <div class="member-links">
+                        <a href="https://www.linkedin.com/in/anshika-singh-a2b679272/" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <!-- <a href="#" class="social-link"><i class="fab fa-behance"></i></a> -->
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </section>
+
+    <!-- News & Media Section -->    <section class="news-media">
+        <div class="container">
+            <h2 class="section-title">News & Media</h2>
+            <div class="news-grid">
+                <article class="news-card">
+                    <div class="news-image">
+                        <img src="assets/news/Mahakumbh.jpg" alt="Startup Mahakumbh Showcase">
+                    </div>
+                    <div class="news-content">
+                        <div class="news-date">April 2025</div>
+                        <h3>Aqua Wings Showcased at Startup Mahakumbh</h3>
+                        <p>Our revolutionary AI-powered water rescue drone system was featured at India's largest startup event, attracting investors and industry experts interested in our life-saving technology.</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </article>
+                <article class="news-card">
+                    <div class="news-image">
+                        <img src="assets/news/incubation.jpg" alt="Amity Incubation Center">
+                    </div>
+                    <div class="news-content">
+                        <div class="news-date">February 2025</div>
+                        <h3>Accepted into Amity Incubation Center</h3>
+                        <p>Aqua Wings has been selected for incubation at Amity Innovation Incubator, providing us with mentorship, resources, and funding support to accelerate our mission of saving lives through technology.</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </article>
+                <article class="news-card">
+                    <div class="news-image">
+                        <img src="assets/news/hackthon.jpg" alt="NSUT Hackathon Victory">
+                    </div>
+                    <div class="news-content">
+                        <div class="news-date">November 2024</div>
+                        <h3>First Place at NSUT Hackathon 2024</h3>
+                        <p>Team Aqua Wings emerged victorious at the prestigious NSUT Hackathon, impressing judges with our innovative approach to autonomous water rescue using AI and drone technology.</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-items">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How accurate is your AI detection?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our AI model currently achieves 95% accuracy in controlled testing environments. We continuously improve the model through machine learning and real-world data collection.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What happens in bad weather?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Aqua Wings is designed with weather-resistant materials and has built-in safety protocols. In severe weather, the system automatically grounds itself and alerts operators.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Can it rescue more than one person?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>A single drone can carry multiple rescue devices and can be deployed to help multiple victims. Our system also supports coordinated multi-drone operations.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How is it better than lifeguards?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Aqua Wings complements human lifeguards by providing 24/7 monitoring, faster response times, and the ability to reach difficult locations. It's designed to work alongside, not replace, human rescuers.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Is this available commercially?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We're currently in the field testing phase and working towards commercial availability. Contact us to join our pilot program or express interest for future deployment.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Join the Mission to Save Lives</h2>
+            <h3>Be part of the revolution in water rescue technology</h3><br>
+            <div class="cta-buttons">
+                <a href="#contact" class="btn btn-secondary">🤝 Partner with Us</a>
+                <a href="#contact" class="btn btn-secondary">💰 Fund Our Mission</a>
+                <a href="#contact" class="btn btn-secondary">🧪 Field Test with Us</a>
+                <a href="#" class="btn btn-secondary">📥 Download Brochure</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-content">
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p><a href="mailto:ramachokkalingam03@gmail.com">ramachokkalingam03@gmail.com</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+91 950 027 4982 </p>
+                        </div>
+                    </div>
+                    <div class="social-media">
+                        <h4>Follow Us</h4>
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/company/105584038/" class="social-link"><i class="fab fa-linkedin"></i></a>
+                            <!-- <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="assets/logo.png" alt="Aqua Wings">
+                        <span>Aqua Wings</span>
+                    </div>
+                    <p>Revolutionizing water rescue with AI-powered autonomous drones.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#how-it-works">How It Works</a></li>
+                        <li><a href="#use-cases">Use Cases</a></li>
+                        <li><a href="#tech">Technology</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe for updates on our progress</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email">
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Aqua Wings. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
